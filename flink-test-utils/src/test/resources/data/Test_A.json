@@ -1,0 +1,16 @@
+{
+  "producer": {
+    "SOURCE-TOPIC": [
+      "{\"review\":{\"rating\":5,\"title\":null,\"description\":null},\"book\":{\"book_id\":\"1234\",\"isbn_10\":\"1111111111\",\"isbn_13\":\"2222222222222\",\"title\":\"A great book\",\"authors\":\"Me, myself, I\",\"year\":2021},\"metadata\":{\"user_id\":\"11111\",\"source\":\"platform\",\"created_at\":1619309433766,\"submitted_at\":1619309433766}}"
+    ]
+  },
+  "consumer": {
+    "SINK-TOPIC": [
+      "{\"userId\":\"11111@platform\",\"rating\":5,\"metadata\":{\"bookId\":\"1234@platform\",\"isbn\":\"2222222222222\",\"source\":\"platform\",\"createdAt\":1619309433766,\"submittedAt\":1619309433766}}"
+    ]
+  },
+  "database": {
+    "initialization": [],
+    "collection": []
+  }
+}

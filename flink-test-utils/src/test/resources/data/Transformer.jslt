@@ -1,0 +1,13 @@
+{
+    "userId": .metadata.user_id + "@" + .metadata.source,
+    "rating": .review.rating,
+    "title": .review.title,
+    "description": .review.description,
+    "metadata": {
+        "bookId": .book.book_id + "@" + .metadata.source,
+        "isbn": .book.isbn_13,
+        "source": .metadata.source,
+        "createdAt": .metadata.created_at,
+        "submittedAt":  .metadata.submitted_at
+    }
+}
