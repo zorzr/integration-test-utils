@@ -1,0 +1,16 @@
+{
+  "producer": {
+    "SOURCE-TOPIC": [
+      "{\"review\":{\"rating\":2,\"title\":\"It's a book\",\"description\":\"Too bad I can't read.\"},\"book\":{\"book_id\":\"3456\",\"isbn_10\":\"0000000000\",\"isbn_13\":\"3333333333333\",\"title\":\"A great book\",\"authors\":\"Me, myself, I\",\"year\":2021},\"metadata\":{\"user_id\":\"33333\",\"source\":\"platform\",\"created_at\":1619309433766,\"submitted_at\":1619309433766}}",
+      "{\"review\":{\"rating\":4,\"title\":\"A book\",\"description\":\"It's a book.\"},\"book\":{\"book_id\":\"2345\",\"isbn_10\":\"1111111111\",\"isbn_13\":\"2222222222222\",\"title\":\"A great book\",\"authors\":\"Me, myself, I\",\"year\":2021},\"metadata\":{\"user_id\":\"22222\",\"source\":\"platform\",\"created_at\":1619309433766,\"submitted_at\":1619309433766}}"
+    ]
+  },
+  "consumer": {},
+  "database": {
+    "initialization": [],
+    "records": [
+      "{\"userId\":\"33333@platform\",\"rating\":2,\"title\":\"It's a book\",\"description\":\"Too bad I can't read.\",\"metadata\":{\"bookId\":\"3456@platform\",\"isbn\":\"3333333333333\",\"source\":\"platform\",\"createdAt\":1619309433766,\"submittedAt\":1619309433766}}",
+      "{\"userId\":\"22222@platform\",\"rating\":4,\"title\":\"A book\",\"description\":\"It's a book.\",\"metadata\":{\"bookId\":\"2345@platform\",\"isbn\":\"2222222222222\",\"source\":\"platform\",\"createdAt\":1619309433766,\"submittedAt\":1619309433766}}"
+    ]
+  }
+}

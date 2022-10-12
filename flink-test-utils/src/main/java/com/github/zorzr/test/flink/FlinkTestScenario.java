@@ -49,7 +49,7 @@ public class FlinkTestScenario {
 
     static class DatabaseSetupOptions {
         private List<String> initialization;
-        private List<String> collection;
+        private List<String> records;
 
         public List<String> getInitialization() {
             return initialization;
@@ -59,12 +59,12 @@ public class FlinkTestScenario {
             this.initialization = initialization;
         }
 
-        public List<String> getCollection() {
-            return collection;
+        public List<String> getRecords() {
+            return records;
         }
 
-        public void setCollection(List<String> collection) {
-            this.collection = collection;
+        public void setRecords(List<String> records) {
+            this.records = records;
         }
     }
 }

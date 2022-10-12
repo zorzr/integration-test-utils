@@ -65,9 +65,21 @@
             <scope>test</scope>
         </dependency>
         <dependency>
+            <groupId>com.github.zorzr</groupId>
+            <artifactId>mongo-test-utils</artifactId>
+            <version>0.1</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
             <groupId>com.schibsted.spt.data</groupId>
             <artifactId>jslt</artifactId>
             <version>0.1.13</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.mongoflink</groupId>
+            <artifactId>mongo-flink</artifactId>
+            <version>1.0-SNAPSHOT</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
